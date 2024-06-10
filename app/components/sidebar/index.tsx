@@ -85,8 +85,8 @@ export const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
         </button>
       </div>
 
-      <div className="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear">
-        {/* sidebar Menu */}
+      <div className="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear text-black dark:text-white">
+        {/* sidebar tab */}
         <nav className=" px-4 py-4 lg:mt-7 lg:px-6">
           {/*  Menu Group */}
           <div>
