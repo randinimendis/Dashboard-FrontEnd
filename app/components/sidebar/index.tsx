@@ -4,8 +4,8 @@ import React, { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { IoClose } from "react-icons/io5";
 import {
+  MdArrowBack,
   MdKeyboardArrowDown,
   MdOutlineCalendarMonth,
   MdOutlineDashboard,
@@ -14,7 +14,8 @@ import {
   MdOutlineTableChart,
   MdPersonOutline,
 } from "react-icons/md";
-import SidebarLinkGroup from "./SidebarLinkGroup";
+import SidebarLinkGroup from "./linkGroup";
+import { HamButton } from "../header/hamButton";
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -58,7 +59,7 @@ export const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   return (
     <aside
       ref={sidebar}
-      className={`absolute left-0 top-0 z-10 flex h-screen w-72 flex-col overflow-y-hidden bg-gray-300 duration-300 ease-linear dark:bg-gray-800 lg:static lg:translate-x-0 ${
+      className={`absolute left-0 top-0 z-20 flex h-screen w-72 flex-col overflow-y-hidden bg-gray-300 duration-300 ease-linear dark:bg-gray-800 lg:static lg:translate-x-0 ${
         sidebarOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     >
@@ -81,7 +82,7 @@ export const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
           aria-expanded={sidebarOpen}
           className="block lg:hidden"
         >
-          <IoClose />
+          <HamButton sidebarOpen={sidebarOpen} />
         </button>
       </div>
 
