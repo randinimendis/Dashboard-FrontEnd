@@ -2,7 +2,7 @@ import Link from "next/link";
 import DarkModeSwitcher from "./DarkModeSwitcher";
 import DropdownMessage from "./messageBar";
 import DropdownNotification from "./notification";
-import DropdownUser from "./DropdownUser";
+import DropdownProfile from "./profile";
 import Image from "next/image";
 import { HamButton } from "./hamButton";
 
@@ -51,7 +51,7 @@ const Header = (props: {
             <DropdownNotification />
             <DropdownMessage />
           </ul>
-          <DropdownUser />
+          <DropdownProfile />
         </div>
       </div>
     </header>
