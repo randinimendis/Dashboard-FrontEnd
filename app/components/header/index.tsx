@@ -39,8 +39,8 @@ const Header = (props: {
         </div>
 
         <div className="hidden sm:block">
-          <h2 className="text-xl text-gray-800">
-            <span className="text-2xl text-cyan-700 pr-3">XANVIA</span> by
+          <h2 className="text-lg text-gray-800 dark:text-white">
+            <span className="text-3xl text-cyan-600 pr-3">XANVIA</span> by
             viduzx
           </h2>
         </div>
