@@ -1,7 +1,18 @@
+"use client";
+
 import useColorMode from "@/app/hooks/useColorMode";
+import useSystemMode from "@/app/hooks/useSystemMode";
+import { useEffect } from "react";
 
 const DarkModeSwitcher = () => {
   const [colorMode, setColorMode] = useColorMode();
+  const [isdefaultDark] = useSystemMode();
+
+  useEffect(() => {
+    if (typeof setColorMode === "function") {
+      setColorMode(isdefaultDark ? "dark" : "light");
+    }
+  }, [isdefaultDark]);
 
   return (
     <li>
