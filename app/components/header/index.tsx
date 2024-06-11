@@ -39,12 +39,9 @@ const Header = (props: {
         </div>
 
         <div className="hidden sm:block">
-          <h2 className="text-lg text-gray-500 dark:text-white">
-            <span className="text-2xl text-cyan-700 dark:text-cyan-400 pr-2">
-              Xanvia
-            </span>{" "}
-            by viduzx
-          </h2>
+          <span className="text-2xl text-cyan-700 dark:text-cyan-400 pr-2">
+            ViduzX | Xanvia
+          </span>
         </div>
 
         <div className="flex items-center gap-3 lg:gap-7">
