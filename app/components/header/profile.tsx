@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+
+
 const DropdownProfile = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -133,9 +135,10 @@ const DropdownProfile = () => {
           </li>
           <li>
             <Link
-              href="/settings"
+              href="/account-settings"
               className="flex items-center gap-3.5 duration-300 ease-in-out hover:text-gray-500 lg:text-base"
             >
+                
               <svg
                 className="fill-current"
                 width="22"
