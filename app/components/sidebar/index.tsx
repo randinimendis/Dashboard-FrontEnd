@@ -231,7 +231,7 @@ export const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               {/* settings  */}
               <li>
                 <Link
-                  href="/settings"
+                  href="/dashboard/"
                   className={`flex items-center gap-2 rounded-md px-4 py-2 duration-300 ease-in-out  ${
                     pathname.includes("settings")
                       ? "bg-cyan-500"

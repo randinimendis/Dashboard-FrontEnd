@@ -34,7 +34,7 @@ export default function DashboardLayout({
 import { useState } from "react";
 import Header from "@/app/components/header";
 import { Sidebar } from "@/app/components/sidebar";
-import AccountSettingsPage from "../account/page";
+
 
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
@@ -53,7 +53,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         {/* Page Content */}
         <main className="flex-grow p-6 bg-gray-100 dark:bg-gray-900 overflow-y-auto">
 
-          <AccountSettingsPage/>
+        
           {children}
         </main>
       </div>
