@@ -270,6 +270,8 @@ export const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   Settings
                 </Link>
               </li>
+              
+
               {/* <!-- Menu Item Settings --> */}
             </ul>
           </div>
